@@ -19,7 +19,7 @@ PromptGen is a dynamic prompt editor application built with Next.js. It allows u
 First, clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/prompt_gen.git
+git clone https://github.com/FetzerJack/prompt_gen.git
 cd prompt_gen
 ```
 
