@@ -80,4 +80,4 @@ This project is licensed under the MIT License.
 ---
 
 
-## Happy coding with PromptGen!
+## Happy prompting with PromptGen!
