@@ -3,19 +3,78 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f0f2f5;
+  /* Light gray background - unchanged */
+  --foreground: #333333;
+  /* Dark gray text - unchanged */
+  --primary: #007bff;
+  /* Example primary color (blue) */
+  --secondary: #6c757d;
+  /* Example secondary color (gray) */
+  --accent: #ffc107;
+  /* Example accent color (yellow) */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #121212;
+    /* Dark background */
+    --foreground: #eeeeee;
+    /* Light text */
+    --primary: #00a8ff;
+    /* Dark mode primary color */
+    --secondary: #adb5bd;
+    /* Dark mode secondary color */
+    --accent: #ffda6b;
+    /* Dark mode accent color */
   }
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Geist', sans-serif;
+  /* Use Geist font */
+}
+
+/* Basic styling for now, will be refined later */
+.sidebar {
+  width: 250px;
+  background-color: #e9ecef;
+  /* Light sidebar background */
+  border-right: 1px solid #ced4da;
+  padding: 1rem;
+  height: 100%;
+  /* Ensure sidebar takes full height */
+}
+
+input,
+textarea {
+  color: var(--foreground);
+  /* Ensure input and textarea text is readable */
+}
+
+.sidebar-search {
+  margin-bottom: 1rem;
+}
+
+.sidebar-prompts {
+  overflow-y: auto;
+  /* Scrollable prompt list if it gets long */
+}
+
+.sidebar-prompt-item {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.sidebar-prompt-item:hover {
+  background-color: #d3d9df;
+  /* Lighter background on hover */
+}
+
+.sidebar-add-new {
+  margin-top: 1rem;
 }

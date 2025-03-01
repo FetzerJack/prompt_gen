@@ -1,0 +1,33 @@
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Prompt {
+  id           String  @id @default(uuid())
+  title        String
+  objective    String?
+  instructions Instruction[]
+  sections     Section[]
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model Instruction {
+  id       String  @id @default(uuid())
+  text     String
+  promptId String
+  prompt   Prompt  @relation(fields: [promptId], references: [id])
+}
+
+model Section {
+  id       String @id @default(uuid())
+  title    String 
+  body     String
+  prompt   Prompt @relation(fields: [promptId], references: [id])
+  promptId String
+}

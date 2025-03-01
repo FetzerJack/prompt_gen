@@ -1,0 +1,255 @@
+
+# 2025-02-21 17:30:40.042870
++/list
+
+# 2025-02-21 17:30:42.081418
++/ls
+
+# 2025-02-21 17:31:03.890301
++/add app
+
+# 2025-02-21 17:31:11.289185
++/add eslint.config.mjs
+
+# 2025-02-21 17:31:15.255277
++/add jsconfig.json
+
+# 2025-02-21 17:31:22.660995
++/add next.config.mjs
+
+# 2025-02-21 17:31:27.513923
++/add package.json
+
+# 2025-02-21 17:31:31.953361
++/add postcss.config.mjs
+
+# 2025-02-21 17:31:33.772814
++/add public
+
+# 2025-02-21 17:31:38.702573
++/add tailwind.config.mjs
+
+# 2025-02-21 17:32:35.753655
++/code 	 <objective>Code a web app that allows users to store XML style LLM prompts</objective> 
++. <instructions> 
++	<instruction>Use the created Next.js project called prompt_gen. Already has tailwind installed</instruction>
++. ^I<instruction>Give the page an appealing title, design, and color scheme</instruction> 
++. ^I<instruction>On a left aligned sidebar, show all of my stored prompts with a search at the top and an add new at the bottom. Both should be functional as expected. Prompts should be deletable from the sidebar
++. </instruction> 
++. ^I<instruction>Upon creating a new prompt, two standards sections appear. First, an Objective text input. Second, an instructions list. The User should be able to add an individual instruction to instructions</
++. instruction> 
++. ^I<instruction>Users may add custom sections. The section title and section body should be available in both a generic text input or the list as described prior</instruction> 
++. ^I<instruction>Prompts should be saved to local storage</instruction> 
++	<instruction>All conversation and responses should be in English</instruction>
++. ^I<instruction>Upon opening a stored prompt, user will be able to adjust the fields. A generate button will open a modal with the completed XML prompt. Reference exampleOutput for the required output format</in
++. struction> 
++. ^I<instruction>After modifying an existing prompt, user may save the prompt, save it to a new prompt with a new title, or just close it.</instruction> 
++. ^I<instruction>The UI should have the highest level of functional design and elegance using modern UI design techniques</instruction> 
++. ^I<instruction>All components, functions, and variables should include comments that articulate a description, parameters, and returns/instruction> 
++. ^I<instruction>All functionality listed in instructions should be implemented and functional</instruction> 
++. </instructions> 
++. <examples> 
++. ^I<exampleOutput> 
++. ^I^I<objective>…</objective> 
++. ^I^I<instructions> 
++. ^I^I^I<instruction>…</instruction> 
++. ^I^I^I<instruction>…</instruction> 
++. ^I^I^I… 
++. ^I^I</instructions> 
++. ^I^I<additionalFieldOne> 
++. ^I^I^I{“text based prompt given by user”} 
++. ^I^I</additionalFieldOne> 
++. ^I^I<additionalFieldTwo> 
++. ^I^I^I<subFieldTwo>…</subFieldTwo> 
++. ^I^I^I<subFieldTwo>…</subFieldTwo> 
++. ^I^I^I… 
++. ^I^I</additionalFieldTwo> 
++. ^I^I… 
++. ^I</exampleOutput> 
++. </examples>  
+
+# 2025-02-21 17:35:16.893249
++/code 	 <objective>Code a web app that allows users to store XML style LLM prompts</objective> 
++. <instructions> 
++	<instruction>Use the created Next.js project called prompt_gen. Already has tailwind installed</instruction>
++. ^I<instruction>Give the page an appealing title, design, and color scheme</instruction> 
++. ^I<instruction>On a left aligned sidebar, show all of my stored prompts with a search at the top and an add new at the bottom. Both should be functional as expected. Prompts should be deletable from the sidebar
++. </instruction> 
++. ^I<instruction>Upon creating a new prompt, two standards sections appear. First, an Objective text input. Second, an instructions list. The User should be able to add an individual instruction to instructions</
++. instruction> 
++. ^I<instruction>Users may add custom sections. The section title and section body should be available in both a generic text input or the list as described prior</instruction> 
++. ^I<instruction>Prompts should be saved to local storage</instruction> 
++	<instruction>All conversation and responses should be in English</instruction>
++. ^I<instruction>Upon opening a stored prompt, user will be able to adjust the fields. A generate button will open a modal with the completed XML prompt. Reference exampleOutput for the required output format</in
++. struction> 
++. ^I<instruction>After modifying an existing prompt, user may save the prompt, save it to a new prompt with a new title, or just close it.</instruction> 
++. ^I<instruction>The UI should have the highest level of functional design and elegance using modern UI design techniques</instruction> 
++. ^I<instruction>All components, functions, and variables should include comments that articulate a description, parameters, and returns/instruction> 
++. ^I<instruction>All functionality listed in instructions must be fully and completely implemented and functional</instruction> 
++. </instructions> 
++. <examples> 
++. ^I<exampleOutput> 
++. ^I^I<objective>…</objective> 
++. ^I^I<instructions> 
++. ^I^I^I<instruction>…</instruction> 
++. ^I^I^I<instruction>…</instruction> 
++. ^I^I^I… 
++. ^I^I</instructions> 
++. ^I^I<additionalFieldOne> 
++. ^I^I^I{“text based prompt given by user”} 
++. ^I^I</additionalFieldOne> 
++. ^I^I<additionalFieldTwo> 
++. ^I^I^I<subFieldTwo>…</subFieldTwo> 
++. ^I^I^I<subFieldTwo>…</subFieldTwo> 
++. ^I^I^I… 
++. ^I^I</additionalFieldTwo> 
++. ^I^I… 
++. ^I</exampleOutput> 
++. </examples>  
+
+# 2025-02-21 17:36:02.290223
++× You're importing a component that needs `useState`. This React hook only works in a client component. To fix, mark the file (or its parent) with the `"use client"` directive.
++  │ 
++  │  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
++  │ 
++  │ 
++   ╭─[/Users/jackfetzer/Documents/Personal/prompt_gen/app/components/Sidebar.js:1:1]
++ 1 │ import React, { useState, useEffect } from 'react';
++   ·                 ────────
++ 2 │ import { v4 as uuidv4 } from 'uuid'; // For generating unique IDs
++ 3 │ 
++ 4 │ /**
++   ╰────
++  × You're importing a component that needs `useEffect`. This React hook only works in a client comp
+
+# 2025-02-21 17:37:50.758720
++Clicking new prompt does nothing
+
+# 2025-02-21 17:38:32.066115
++Clicking a newly created prompt does nothing
+
+# 2025-02-21 17:40:06.511752
++/tokens
+
+# 2025-02-21 17:40:23.712183
++Implement the prompt viewing and editing
+
+# 2025-02-21 17:41:20.128805
++Allow for the editing of the title, allow for adding instructions as per the spec given, and implement the additional fields as requested in the spec
+
+# 2025-02-21 17:41:45.284394
++/code Allow for the editing of the title, allow for adding instructions as per the spec given, and i
++. mplement the additional fields as requested in the spec  
+
+# 2025-02-21 17:44:11.868472
++You managed to break page.js. Fix it
+
+# 2025-02-21 17:46:12.100952
++Now, I need to be able to save prompts, save a prompt as a new prompt, or view the prompt in XML format. Also, correct the text color as to not be the same color as the background. The text is generally unreadable on inputs and sidebar. 
+
+# 2025-02-21 17:51:31.925450
++/code adjust the text color as to not blend with the background. Attach the className directly to the wrapping tag of the text. Also, add a notification or alert when a save is successful. Also, impelment the Generate XML button
+
+# 2025-02-21 17:53:40.100480
++/code both Save and and Save As New are not functional despite getting success alerts
+
+# 2025-02-21 17:57:07.373497
++The issue is that the prompts shown are not being dyanmically updated with localstorage. You need to ensure that everything is properly dynamically updated on saves or edits. Please adjust.
+
+# 2025-02-21 18:01:11.215146
++/code replace all instances of text-foreground with text-gray-800
+
+# 2025-02-21 18:02:31.116936
++Okay, now fix the titles to be white
+
+# 2025-02-21 18:04:13.109241
++get rid of the regular save notification but keep the save as notification
+
+# 2025-02-21 18:05:11.920932
++/code allow instructions and custom sections to be deleted
+
+# 2025-02-21 18:10:45.085826
++/code replace all UI alerts with modals that reflect the styling of the site
+
+# 2025-02-21 18:12:54.782812
++format the xml output to use proper indents and line breaks
+
+# 2025-02-21 18:14:51.285978
++/code add a copy button to the generate xml modal
+
+# 2025-02-21 18:16:23.012311
++TypeError: undefined is not an object (evaluating 'navigator.clipboard.writeText')
+
+# 2025-02-21 18:17:20.152298
++/code ensure it works in safari as well
+
+# 2025-02-21 18:20:46.072448
++TypeError: undefined is not an object (evaluating 'navigator.clipboard.writeText')
+
+# 2025-02-21 18:24:39.433857
++Get rid of SaveModal
+
+# 2025-02-21 18:26:07.776681
++The generate XML modal should take up a large portion of the screen and should be scrollable for its content
+
+# 2025-02-21 18:27:56.526266
++/code update the generateXML modal to use most of the screen and be scrollable
+
+# 2025-02-21 18:29:31.872896
++When I delete a prompt, go to the next available prompt. If no prompt is available prompt is avaialbe, set current prompt to null
+
+# 2025-02-21 18:32:12.726729
++remove all console.log statements. Keep console.error or any absolutely necessary console.logs
+
+# 2025-02-21 21:00:28.809427
++/add prisma
+
+# 2025-02-21 21:01:17.118536
++/code Covert the codebase from using local storage to using prisma. Use the schema.prisma for the database structure. Local storage should no longer be used and all prompts stored in the database.
+
+# 2025-02-21 21:06:31.185651
++./app/api/prompts/route.js
++Error:   × Unexpected token `{`. Expected identifier, string literal, numeric literal or [ for the computed key
++    ╭─[/Users/jackfetzer/Documents/Personal/prompt_gen/app/api/prompts/route.js:41:1]
++ 38 │     }
++ 39 │ 
++ 40 │     const prompt = await prisma.prompt.create({
++ 41 │        {
++    ·        ─
++ 42 │         title,
++ 43 │       },
++ 44 │     });
++    ╰────
++
++Caused by:
++    Syntax Error
+
+# 2025-02-21 21:10:06.251410
++You're missing a property assignment in fromt of the { before title. This issue is in other files as well. Reevaluate and make corrective measures to fix the error
+
+# 2025-02-22 13:24:22.184945
++/tokens
+
+# 2025-02-22 13:28:37.516215
++/code TypeError: undefined is not an object (evaluating 'currentPrompt.instructions.map')
+
+# 2025-02-22 13:30:15.362501
++/models
+
+# 2025-02-22 13:34:57.086791
++/code allow both stored instructions and custom sections to be both deletable and editable
+
+# 2025-02-22 13:36:12.769904
++/code add a functional edit button next to the delete button for Instructions and Custom Sections
+
+# 2025-02-22 13:40:00.398871
++/drop path
+
+# 2025-02-22 13:40:15.756489
++/code add a functional edit button next to the delete button for Instructions and Custom Sections
+
+# 2025-02-22 13:41:22.206527
++/drop path
+
+# 2025-02-22 13:45:40.123290
++/code the Save button for Instructions and Custom Sections while editing existing sections 

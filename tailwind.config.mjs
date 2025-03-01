@@ -10,6 +10,7 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        'gray-800': '#333333' // Define gray-800 if not already in your palette
       },
     },
   },
