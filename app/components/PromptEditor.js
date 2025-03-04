@@ -44,7 +44,8 @@ const PromptEditor = ({ selectedPrompt, onPromptUpdated }) => {
 
   const handleAddInstruction = () => {
     if (newInstruction.trim() !== '') {
-      const updatedInstructions = [...currentPrompt.instructions, { text: newInstruction.trim() }];
+      // Add null check with default empty array to prevent spread syntax error
+      const updatedInstructions = [...(currentPrompt.instructions || []), { text: newInstruction.trim() }];
       setCurrentPrompt(prevPrompt => ({ ...prevPrompt, instructions: updatedInstructions }));
       setNewInstruction('');
     }
